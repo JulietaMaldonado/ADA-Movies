@@ -1,19 +1,35 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import {
+  Home,
+  Popular,
+  Search,
+  Upcoming,
+} from "./pages";
+
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />}>
+        {/*   http://localhost:3000/   */}
+        <Route index element={<Home />} />
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+        {/*   http://localhost:3000/popular   */}
+        <Route path="popular" element={<Popular />} />
+
+        {/*   http://localhost:3000/search   */}
+        <Route path="search" element={<Search />} />
+
+        {/*   http://localhost:3000/upcoming   */}
+        <Route path="upcoming" element={<Upcoming />} />
+      </Route>
+    </Routes>
+  </BrowserRouter>
+);

@@ -4,4 +4,4 @@ function Main(){
     </main>
 }
 
-export default Main;
+export { Main };

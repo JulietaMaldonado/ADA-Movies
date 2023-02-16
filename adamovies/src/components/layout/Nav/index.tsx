@@ -1,21 +1,26 @@
+import { FC } from 'react';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import { NavLink } from "react-router-dom";
 
-function Nav() {
-    return <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link" href="#">Home</a>
-        <a class="nav-link" href="#">Upcoming</a>
-        <a class="nav-link" href="#">Popular</a>
-        <a class="nav-link" href="#">Search</a>
-      </div>
-    </div>
-  </div>
-    </nav>
+const BarNav: FC = () => {
+  return (
+    <>
+      <Navbar>
+        <Container>
+          <Navbar.Brand href="#">ADA Movies</Navbar.Brand>
+          <Nav className="me-auto">
+            <NavLink className="nav-link" to="/home">Home</NavLink>
+            <NavLink className="nav-link" to="/upcoming">Upcoming</NavLink>
+            <NavLink className="nav-link" to="/popular">Popular</NavLink>
+            <NavLink className="nav-link" to="/search">Search</NavLink>
+          </Nav>
+        </Container>
+      </Navbar>
+    </>
+  );
 }
 
-export default Nav;
+
+export { BarNav };
