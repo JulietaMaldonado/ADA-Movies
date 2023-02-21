@@ -11,7 +11,7 @@ const BarNav: FC = () => {
         <Container>
           <Navbar.Brand href="#">ADA Movies</Navbar.Brand>
           <Nav className="me-auto">
-            <NavLink className="nav-link" to="/home">Home</NavLink>
+            <NavLink className="nav-link" to="/">Home</NavLink>
             <NavLink className="nav-link" to="/upcoming">Upcoming</NavLink>
             <NavLink className="nav-link" to="/popular">Popular</NavLink>
             <NavLink className="nav-link" to="/search">Search</NavLink>
