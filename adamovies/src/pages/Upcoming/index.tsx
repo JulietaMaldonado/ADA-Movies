@@ -1,9 +1,9 @@
-import { Footer, Header, Main } from "../../components";
+import { Footer, Header } from "../../components";
 
 const Upcoming = () => {
     return <>
     <Header />
-        <Main />
+        {/* <Main /> */}
         <Footer />
     </>
 }
