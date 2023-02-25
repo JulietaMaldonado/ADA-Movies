@@ -5,7 +5,7 @@ const Search = () => {
     return <>
     <Header />
       <Main>
-        <SearchInput />
+<SearchInput />
       </Main>
         <Footer />
     </>
