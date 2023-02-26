@@ -1,7 +1,7 @@
 import { apiMovies } from '../../../utils/axios';
 import { useEffect, useState } from 'react';
 import Card from 'react-bootstrap/Card';
-import "./style.css"
+import "./../style.css"
 
 const PopularList = () => {
   const [movies, setMovies] = useState<any[]>([])
@@ -15,10 +15,10 @@ const widthImg = "w500"
    
 
         return (
-          <>   <div className="title">
-                  <h2>POPULAR</h2>
+          <>   <div className="title-pop">
+                  <h2 className='title-pop2'>POPULAR</h2>
             </div>
-       <div className='container-cards'>
+       <div className='container-cards-pop'>
          {movies.map(movie => (  <Card>
            
             <Card.Img src= {baseUrl + widthImg + movie.poster_path}/>
