@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import {
   Home,
+  LoginP,
   Popular,
   Search,
   Upcoming,
@@ -13,8 +14,11 @@ function App() {
    <BrowserRouter>
    <Routes>
       <Route path="/">
-        {/*   http://localhost:3000/   */}
-        <Route index element={<Home />} />
+      {/*   http://localhost:3000/login   */}
+        <Route index element={<LoginP />} />
+
+        {/*   http://localhost:3000/home   */}
+        <Route element={<Home />} />
 
         {/*   http://localhost:3000/popular   */}
         <Route path="popular" element={<Popular />} />
