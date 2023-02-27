@@ -1,7 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 import { apiMovies } from '../../../utils/axios';
 import { useEffect, useState } from 'react';
-import "./../style.css"
 
 const Carrusel = () => {
   const [movies, setMovies] = useState<any[]>([])
