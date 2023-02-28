@@ -1,0 +1,27 @@
+.movie-title{
+    color: red;
+}
+.movie-desc{
+    color: red;
+}
+.title{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+.title2{
+  font-size: 25px;
+}
+.container-cards{
+display: flex;
+overflow-x: scroll;
+}
+.tarjeta{
+    margin: 10px;
+    
+}
+.card-image{
+    width: 250px;
+    height: 300px;
+    border-radius: 8px;
+}

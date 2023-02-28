@@ -1,7 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 import { apiMovies } from '../../../utils/axios';
 import { useEffect, useState } from 'react';
-import "./style.css"
 
 const Carrusel = () => {
   const [movies, setMovies] = useState<any[]>([])
@@ -24,8 +23,8 @@ const widthImg = "w1280"
             alt="First slide"
           />
           <Carousel.Caption>
-            <h5>{movie.title}</h5>
-            <p>{movie.overview}</p>
+            <h5 className='movie-title'>{movie.title}</h5>
+            <p className='movie-desc'>{movie.overview}</p>
           </Carousel.Caption>
         </Carousel.Item>
        ))}

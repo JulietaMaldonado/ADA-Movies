@@ -1,8 +1,5 @@
 import { apiMovies } from '../../../utils/axios';
 import { useEffect, useState } from 'react';
-import Card from 'react-bootstrap/Card';
-import "./style.css"
-
 const TopList = () => {
   const [movies, setMovies] = useState<any[]>([])
 
@@ -16,37 +13,17 @@ const widthImg = "w500"
 
         return (
           <>   <div className="title">
-                  <h2>TOP RATED MOVIES</h2>
+                  <h2 className='title2'>TOP RATED MOVIES</h2>
             </div>
        <div className='container-cards'>
-         {movies.map(movie => (  <Card>
+         {movies.map(movie => (  <div className='tarjeta'>
            
-            <Card.Img src= {baseUrl + widthImg + movie.poster_path}/>
+           <img src= {baseUrl + widthImg + movie.poster_path} className='card-image'/>
            
-          </Card> ))}
+          </div> ))}
        </div>
           </>
         );
-      
-     
-      // <Carousel variant="dark">
-      //  {
-      //   movies.map(movie => (
-         
-      //    <Carousel.Item key={movie.id}>
-      //     <img
-      //       className="d-block w-100"
-      //       src= {baseUrl + widthImg + movie.backdrop_path}
-      //       alt="First slide"
-      //     />
-      //     <Carousel.Caption>
-      //       <h5>{movie.title}</h5>
-      //       <p>{movie.overview}</p>
-      //     </Carousel.Caption>
-      //   </Carousel.Item>
-      //  ))}
-      // </Carousel>
-    
-  }
-   //export default ImgOverlayExample;
+         }
+
   export {TopList};
