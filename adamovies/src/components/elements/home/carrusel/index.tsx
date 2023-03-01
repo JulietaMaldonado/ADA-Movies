@@ -23,8 +23,8 @@ const widthImg = "w1280"
             alt="First slide"
           />
           <Carousel.Caption>
-            <h5 className='movie-title'>{movie.title}</h5>
-            <p className='movie-desc'>{movie.overview}</p>
+            <h5 className='movie-title-home'>{movie.title}</h5>
+            <p className='movie-desc-home'>{movie.overview}</p>
           </Carousel.Caption>
         </Carousel.Item>
        ))}

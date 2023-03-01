@@ -12,13 +12,13 @@ const widthImg = "w500"
    
 
         return (
-          <>   <div className="title">
-                  <h2 className='title2'>TOP RATED MOVIES</h2>
+          <>   <div className="title-home">
+                  <h2 className='title-home2'>TOP RATED MOVIES</h2>
             </div>
-       <div className='container-cards'>
-         {movies.map(movie => (  <div className='tarjeta'>
+       <div className='container-cards-home'>
+         {movies.map(movie => (  <div className='card-home'>
            
-           <img src= {baseUrl + widthImg + movie.poster_path} className='card-image'/>
+           <img src= {baseUrl + widthImg + movie.poster_path} className='card-image-home'/>
            
           </div> ))}
        </div>

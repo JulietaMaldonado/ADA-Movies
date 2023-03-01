@@ -1,10 +1,9 @@
-import { Footer, Header, Main} from "../../components";
-import { Carrusel, PopularList, TopList } from "../../components/elements/home";
+import { Footer, Header, Main, Carrusel, PopularList, TopList } from "../../components";
 import "./style.css"
 
 const Home = () => {
     return <>
-    <Header />
+    <Header/>
       <Main>
   <Carrusel/>
     <PopularList />

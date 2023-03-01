@@ -1,5 +1,4 @@
-
-
+import "./style.css"
 import { FC, ReactNode } from "react"
 
 type Props = {
