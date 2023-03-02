@@ -1,7 +1,6 @@
-//import { apiMovies } from '../../../utils/axios';
 import axios from 'axios';
+import { data } from 'jquery';
 import { useEffect, useState } from 'react';
-//import Card from 'react-bootstrap/Card';
 
 const SearchInput = () => {
 
@@ -10,20 +9,18 @@ const API_URL = "https://api.themoviedb.org/3/"
 const API_KEY = "8f2ec42ca660094d1483c89192516f6a"
 const URL_IMAGE = "https://image.tmdb.org/t/p/w500/"
 
-const [movies, setMovies] = useState<any []>([])
+const [movies, setMovies] = useState([])
 const [searchKey, setSearchKey] = useState("")
 
 const fetchMovies = async() =>{
     const type = searchKey ? "search" : "discover"
-    const {data: { results },
-} = await axios.get(` ${API_URL}/${type}/movie`, {
+    const {data: { results }} = await axios.get(` ${API_URL}/${type}/movie`, {
     params: {
         api_key: API_KEY,
         query: searchKey,
     },
 });
 setMovies(results);
-setMovies(results[0]);
 }
 
 const searchMovies = (e: { preventDefault: () => void; }) => {
@@ -32,7 +29,7 @@ const searchMovies = (e: { preventDefault: () => void; }) => {
 }
 
 function search(paremtro: string){
-    console.log(search)
+    setSearchKey(paremtro)
 };
 
 useEffect(() =>{
@@ -43,21 +40,21 @@ useEffect(() =>{
 return(
     <>
 
-<form action="" className='container-form' onSubmit={searchMovies}>
+<form action="" className='container-form-search' onSubmit={searchMovies}>
     <input type="text" onChange={(e) => search(e.target.value)} />
     <button>Buscar</button>
 </form>
-
-<div className="container-cards">
+{
+<div className="container-cards-search">
             {
-                movies.map((movie) => (
-                    <div key={movie.movie_id} className='card'>
-                        <img src={`${URL_IMAGE + movie.poster_path}`} alt="" className="card-image" />
+                movies.map(movie => (
+                    <div key={movie.id} className='tarjeta-search'>
+                        <img src={`${URL_IMAGE + movie.poster_path}`} alt="" className="card-image-search" />
                     </div>
                 ))
             }
         </div>
-
+}
     </>
 )
 

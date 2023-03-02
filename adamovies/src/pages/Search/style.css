@@ -1,0 +1,31 @@
+.title-upcoming{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.title-upcoming2{
+  font-size: 45px;
+  text-align: center;
+}
+
+.container-form-search{
+    margin: 20px;
+}
+.container-cards-search{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    flex-wrap: nowrap;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tarjeta-search{
+    margin: 10px;
+    
+}
+.card-image-search{
+    width: 250px;
+    height: 300px;
+    border-radius: 8px;
+}
