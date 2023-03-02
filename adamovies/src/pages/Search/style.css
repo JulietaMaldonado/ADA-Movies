@@ -1,8 +1,8 @@
-.title-upcoming{
+.title-search{
     margin-top: 25px;
     margin-bottom: 25px;
 }
-.title-upcoming2{
+.title-search{
   font-size: 45px;
   text-align: center;
 }
@@ -10,6 +10,21 @@
 .container-form-search{
     margin: 20px;
 }
+.input-search{
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.button-search{
+    border-radius: 5px;
+    border: none;
+    background-color: blue;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
 .container-cards-search{
     display: grid;
     grid-template-columns: repeat(4, 1fr);

@@ -39,10 +39,13 @@ useEffect(() =>{
 
 return(
     <>
+<div className="title-search">
+    <h2 className="title-search2">SEARCH</h2>
+</div>
 
 <form action="" className='container-form-search' onSubmit={searchMovies}>
-    <input type="text" onChange={(e) => search(e.target.value)} />
-    <button>Buscar</button>
+    <input type="text" onChange={(e) => search(e.target.value)} className='input-search'/>
+    <button className='button-search'>Buscar</button>
 </form>
 {
 <div className="container-cards-search">
