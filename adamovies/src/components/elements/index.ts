@@ -1,3 +1,3 @@
-export {Carrusel, PopularList, TopList} from "./home"
-export {SearchInput} from "./search"
-export {ContUpcoming} from "./upcoming"
+export { Carrusel, TopList, PopularList, MoviesGallery } from "./home";
+export { SearchInput } from "./search";
+export { ContUpcoming } from "./upcoming";
