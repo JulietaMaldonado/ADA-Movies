@@ -29,7 +29,7 @@ const Home = () => {
     <>
       <Header />
       <Main>
-        <Carrusel />
+        <Carrusel items={topRated} />
         <MoviesGallery items={popular} title="POPULAR" />
         <MoviesGallery items={topRated} title="TOP RATED MOVIES" />
         {/* <PopularList />

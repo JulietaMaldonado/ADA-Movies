@@ -1,25 +1,19 @@
+import { FC } from "react";
 import Carousel from "react-bootstrap/Carousel";
-import { apiMovies } from "../../../../utils/axios";
-import { useEffect, useState } from "react";
+import { BASE_URL, WIDTH_IMG } from "../../../../constants/movies-api";
 
-const Carrusel = () => {
-  const [movies, setMovies] = useState<any[]>([]);
+type Props = {
+  items: any[];
+};
 
-  useEffect(() => {
-    apiMovies
-      .get("/movie/top_rated")
-      .then((response) => setMovies(response.data.results));
-  }, []);
-  const baseUrl = "https://image.tmdb.org/t/p/";
-  const widthImg = "w1280";
-
+const Carrusel: FC<Props> = ({ items }) => {
   return (
     <Carousel variant="dark">
-      {movies.map((movie) => (
+      {items.map((movie) => (
         <Carousel.Item key={movie.id}>
           <img
             className="d-block w-100"
-            src={baseUrl + widthImg + movie.backdrop_path}
+            src={BASE_URL + WIDTH_IMG + movie.backdrop_path}
             alt="First slide"
           />
           <Carousel.Caption>
