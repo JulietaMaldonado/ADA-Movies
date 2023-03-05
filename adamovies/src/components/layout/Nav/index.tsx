@@ -24,6 +24,9 @@ const BarNav: FC = () => {
             <NavLink className="nav-link" to="/search">
               Search
             </NavLink>
+            <NavLink className="nav-link" to="/signup">
+              SignUp
+            </NavLink>
           </Nav>
         </Container>
       </Navbar>

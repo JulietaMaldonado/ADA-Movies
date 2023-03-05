@@ -1,10 +1,14 @@
-import { Footer, Header } from "../../components";
+import { Footer, Header, Main } from "../../components";
+import { ContUpcoming } from "../../components";
+import "./style.css";
 
 const Upcoming = () => {
   return (
     <>
       <Header />
-      {/* <Main /> */}
+      <Main>
+        <ContUpcoming />
+      </Main>
       <Footer />
     </>
   );

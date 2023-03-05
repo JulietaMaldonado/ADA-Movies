@@ -4,6 +4,7 @@ import {
   Popular,
   Search,
   Upcoming,
+  SignUp
 } from "./pages";
 
 function App() {
@@ -13,6 +14,9 @@ function App() {
    <BrowserRouter>
    <Routes>
       <Route path="/">
+       {/*   http://localhost:3000/signup   */}
+       <Route path='signup' element={<SignUp />} />
+
         {/*   http://localhost:3000/   */}
         <Route index element={<Home />} />
 
