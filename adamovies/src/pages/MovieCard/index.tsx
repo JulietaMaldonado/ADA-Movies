@@ -1,14 +1,13 @@
-import { Footer, Header, Main} from "../../components";
+import { Footer, Header, Main } from "../../components";
 
 const MovieCard = () => {
-
-    return <>
-    <Header />
-      <Main>
-     
-      </Main>
-        <Footer />
+  return (
+    <>
+      <Header />
+      <Main>Movie card</Main>
+      <Footer />
     </>
-}
+  );
+};
 
-export {MovieCard}
+export { MovieCard };

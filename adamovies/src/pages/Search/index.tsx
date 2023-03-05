@@ -1,11 +1,13 @@
 import { Footer, Header } from "../../components";
 
 const Search = () => {
-    return <>
-    <Header />
-        {/* <Main /> */}
-        <Footer />
+  return (
+    <>
+      <Header />
+      {/* <Main /> */}
+      <Footer />
     </>
-}
+  );
+};
 
-export {Search}
+export { Search };

@@ -1,1 +1,1 @@
-export {Carrusel, TopList, PopularList} from "./home"
+export { Carrusel, TopList, PopularList, MoviesGallery } from "./home";

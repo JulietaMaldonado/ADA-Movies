@@ -1,9 +1,11 @@
-import {BarNav} from "../Nav";
+import { BarNav } from "../Nav";
 
-function Header(){
-    return <header>
-       <BarNav />
-        </header>
+function Header() {
+  return (
+    <header>
+      <BarNav />
+    </header>
+  );
 }
 
 export { Header };

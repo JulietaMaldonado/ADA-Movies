@@ -1,16 +1,43 @@
-import { Footer, Header, Main, Carrusel, PopularList, TopList } from "../../components";
-import "./style.css"
+import { useEffect, useState } from "react";
+import {
+  Footer,
+  Header,
+  Main,
+  Carrusel,
+  PopularList,
+  TopList,
+  MoviesGallery,
+} from "../../components";
+import { apiMovies } from "../../utils/axios";
+import "./style.css";
 
 const Home = () => {
-    return <>
-    <Header/>
-      <Main>
-  <Carrusel/>
-    <PopularList />
-        <TopList/>
-      </Main>
-        <Footer />
-    </>
-}
+  const [popular, setPopular] = useState([]);
+  const [topRated, setTopRated] = useState([]);
 
-export {Home}
+  useEffect(() => {
+    apiMovies
+      .get("/movie/popular")
+      .then((response) => setPopular(response.data.results));
+
+    apiMovies
+      .get("/movie/top_rated")
+      .then((response) => setTopRated(response.data.results));
+  }, []);
+
+  return (
+    <>
+      <Header />
+      <Main>
+        <Carrusel />
+        <MoviesGallery items={popular} title="POPULAR" />
+        <MoviesGallery items={topRated} title="TOP RATED MOVIES" />
+        {/* <PopularList />
+        <TopList /> */}
+      </Main>
+      <Footer />
+    </>
+  );
+};
+
+export { Home };
