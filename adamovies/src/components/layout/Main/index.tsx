@@ -1,25 +1,19 @@
-
-
-import { FC, ReactNode } from "react"
+import "./style.css";
+import { FC, ReactNode } from "react";
 
 type Props = {
-    children: ReactNode
-}
+  children: ReactNode;
+};
 
+const Main: FC<Props> = ({ children }) => {
+  return (
+    <>
+      <main>{children}</main>
+    </>
+  );
+};
 
-const Main: FC<Props> = ({ children}) => {
-
-    return (
-        <>
-            <main>
-                {children}
-            </main>
-        </>
-    )
-
-}
-
-export { Main }
+export { Main };
 
 /*const Main = () => {
     return <main>

@@ -1,15 +1,17 @@
 import { Footer, Header, Main } from "../../components";
 import { SearchInput } from "../../components/elements/search";
-import "./style.css"
+import "./style.css";
 
 const Search = () => {
-    return <>
-    <Header />
+  return (
+    <>
+      <Header />
       <Main>
-<SearchInput />
+        <SearchInput />
       </Main>
-        <Footer />
+      <Footer />
     </>
-}
+  );
+};
 
-export {Search}
+export { Search };

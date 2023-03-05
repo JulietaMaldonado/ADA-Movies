@@ -1,27 +1,48 @@
-.movie-title{
-    color: red;
+.movie-title {
+  color: red;
 }
-.movie-desc{
-    color: red;
+.movie-desc {
+  color: red;
 }
-.title{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-left: 15px;
+.title {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
 }
-.title2{
+.title2 {
   font-size: 25px;
 }
-.container-cards{
-display: flex;
-overflow-x: scroll;
+.container-cards {
+  display: flex;
+  overflow-x: scroll;
 }
-.tarjeta{
-    margin: 10px;
-    
+.tarjeta {
+  margin: 10px;
 }
-.card-image{
-    width: 250px;
-    height: 300px;
-    border-radius: 8px;
+
+.movie-title-home {
+  color: red;
+}
+.movie-desc-home {
+  color: red;
+}
+.title-home {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.title-home2 {
+  font-size: 35px;
+  text-align: center;
+}
+.container-cards-home {
+  display: flex;
+  overflow-x: scroll;
+}
+.card-home {
+  margin: 10px;
+}
+.card-image {
+  width: 250px;
+  height: 300px;
+  border-radius: 8px;
 }
