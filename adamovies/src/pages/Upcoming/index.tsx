@@ -1,15 +1,17 @@
 import { Footer, Header, Main } from "../../components";
 import { ContUpcoming } from "../../components";
-import "./style.css"
+import "./style.css";
 
 const Upcoming = () => {
-    return <>
-    <Header />
-      <Main> 
-<ContUpcoming />
+  return (
+    <>
+      <Header />
+      <Main>
+        <ContUpcoming />
       </Main>
-        <Footer />
+      <Footer />
     </>
-}
+  );
+};
 
-export {Upcoming}
+export { Upcoming };

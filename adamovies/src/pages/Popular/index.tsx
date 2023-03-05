@@ -1,14 +1,16 @@
-import { Footer, Header, Main, ContPopular} from "../../components";
-import "./style.css"
+import { Footer, Header, Main, ContPopular } from "../../components";
+import "./style.css";
 
 const Popular = () => {
-    return <>
-    <Header />
+  return (
+    <>
+      <Header />
       <Main>
         <ContPopular />
       </Main>
-        <Footer />
+      <Footer />
     </>
-}
+  );
+};
 
-export {Popular}
+export { Popular };
