@@ -1,10 +1,14 @@
-import { Footer, Header } from "../../components";
+import { Footer, Header, Main } from "../../components";
+import { SearchInput } from "../../components/elements/search";
+import "./style.css";
 
 const Search = () => {
   return (
     <>
       <Header />
-      {/* <Main /> */}
+      <Main>
+        <SearchInput />
+      </Main>
       <Footer />
     </>
   );
