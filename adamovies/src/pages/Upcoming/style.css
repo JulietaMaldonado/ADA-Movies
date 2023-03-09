@@ -1,12 +1,12 @@
-.title-upcoming{
+.title-page{
     margin-top: 25px;
     margin-bottom: 25px;
 }
-.title-upcoming2{
+.title-page2{
   font-size: 45px;
   text-align: center;
 }
-.container-upcoming{
+.container-page{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
@@ -16,11 +16,11 @@
     margin-left: auto;
     margin-right: auto;
 }
-.tarjeta-upcoming{
+.tarjeta-page{
     margin: 10px;
     
 }
-.tarjeta-image-upcoming{
+.tarjeta-image-page{
     width: 250px;
     height: 300px;
     border-radius: 8px;

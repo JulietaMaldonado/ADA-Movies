@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Footer, Header, Main } from "../../components";
-import { ContUpcoming } from "../../components";
+import { ContCards } from "../../components";
 import "./style.css";
 import { apiMovies } from "../../utils/axios";
 
@@ -16,7 +16,7 @@ const Upcoming = () => {
     <>
       <Header />
       <Main>
-        <ContUpcoming items={upcoming} />
+        <ContCards items={upcoming} />
       </Main>
       <Footer />
     </>

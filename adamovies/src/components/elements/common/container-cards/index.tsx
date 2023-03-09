@@ -6,18 +6,18 @@ type Props = {
   title: string;
 };
 
-const ContUpcoming: FC<Props> = ({ items, title }) => {
+const ContCards: FC<Props> = ({ items, title }) => {
   return (
     <>
-      <div className="title-upcoming">
-        <h2 className="title-upcoming2">{title}</h2>
+      <div className="title-page">
+        <h2 className="title-page2">{title}</h2>
       </div>
-      <div className="container-upcoming">
+      <div className="container-page">
         {items.map((movie) => (
-          <div className="tarjeta-upcoming">
+          <div className="tarjeta-page">
             <img
               src={BASE_URL + WIDTH_IMG + movie.poster_path}
-              className="tarjeta-image-upcoming"
+              className="tarjeta-image-page"
             />
           </div>
         ))}
@@ -26,4 +26,4 @@ const ContUpcoming: FC<Props> = ({ items, title }) => {
   );
 };
 
-export { ContUpcoming };
+export { ContCards };
