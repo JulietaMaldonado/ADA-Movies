@@ -4,8 +4,6 @@ import {
   Header,
   Main,
   Carrusel,
-  PopularList,
-  TopList,
   MoviesGallery,
 } from "../../components";
 import { apiMovies } from "../../utils/axios";

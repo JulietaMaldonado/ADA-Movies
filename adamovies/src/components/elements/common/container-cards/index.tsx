@@ -6,18 +6,18 @@ type Props = {
   title: string;
 };
 
-const MoviesGallery: FC<Props> = ({ items, title }) => {
+const ContCards: FC<Props> = ({ items, title }) => {
   return (
     <>
-      <div className="title-home">
-        <h2 className="title-home2">{title}</h2>
+      <div className="title-page">
+        <h2 className="title-page2">{title}</h2>
       </div>
-      <div className="container-cards-home">
+      <div className="container-page">
         {items.map((movie) => (
-          <div className="card-home">
+          <div className="tarjeta-page">
             <img
               src={BASE_URL + WIDTH_IMG + movie.poster_path}
-              className="card-image-home"
+              className="tarjeta-image-page"
             />
           </div>
         ))}
@@ -26,4 +26,4 @@ const MoviesGallery: FC<Props> = ({ items, title }) => {
   );
 };
 
-export { MoviesGallery };
+export { ContCards };
